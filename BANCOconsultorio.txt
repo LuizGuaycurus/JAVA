@@ -1,0 +1,11 @@
+create database consultorio;
+use consultorio;
+create table paciente
+(
+ ID INT not null primary key,
+ Nome VARCHAR(40) not null,
+ CPF VARCHAR(14) not null unique,
+ Consulta VARCHAR(20) not null,
+ Dataconsulta VARCHAR(20) not null,
+ Horario VARCHAR(20) not null
+);
